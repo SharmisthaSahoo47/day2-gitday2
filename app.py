@@ -6,8 +6,8 @@ def lambda_handler(event, context):
             response = client.run_instances(
                             ImageId='ami-0614680123427b75e',
                                     InstanceType='t2.micro',
-
-                                            KeyName='Linux',   #updated Linux as agreed instead of ubuntu
+                                            KeyName='Linux',   
+                                            
                                                     MaxCount=2,
                                                             MinCount=1
                                                                 )
